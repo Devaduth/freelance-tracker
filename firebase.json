@@ -1,0 +1,16 @@
+{
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "auth": {
+    "providers": {
+      "emailPassword": true,
+      "googleSignIn": {
+        "oAuthBrandDisplayName": "FreelanceHQ",
+        "supportEmail": "support@example.com",
+        "authorizedRedirectUris": ["http://localhost:3000"]
+      }
+    }
+  }
+}

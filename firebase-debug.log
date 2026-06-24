@@ -1,0 +1,104 @@
+[debug] [2026-06-24T13:32:10.584Z] ----------------------------------------------------------------------
+[debug] [2026-06-24T13:32:10.585Z] Command:       /usr/local/bin/node /Users/apple/.npm/_npx/ba4f1959e38407b5/node_modules/.bin/firebase deploy --only auth
+[debug] [2026-06-24T13:32:10.586Z] CLI Version:   15.22.1
+[debug] [2026-06-24T13:32:10.586Z] Platform:      darwin
+[debug] [2026-06-24T13:32:10.586Z] Node Version:  v24.16.0
+[debug] [2026-06-24T13:32:10.586Z] Detected Agent: unknown
+[debug] [2026-06-24T13:32:10.586Z] Time:          Wed Jun 24 2026 19:02:10 GMT+0530 (India Standard Time)
+[debug] [2026-06-24T13:32:10.586Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-06-24T13:32:11.364Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-06-24T13:32:11.364Z] > authorizing via signed-in user (kmdevaduth@gmail.com)
+[debug] [2026-06-24T13:32:11.364Z] [iam] checking project polished-watch-438215-q5 for permissions ["firebase.projects.get","firebase.projects.update","firebaseauth.configs.update"]
+[debug] [2026-06-24T13:32:11.365Z] Checked if tokens are valid: true, expires at: 1782310455431
+[debug] [2026-06-24T13:32:11.365Z] Checked if tokens are valid: true, expires at: 1782310455431
+[debug] [2026-06-24T13:32:11.365Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/polished-watch-438215-q5:testIamPermissions [none]
+[debug] [2026-06-24T13:32:11.365Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/polished-watch-438215-q5:testIamPermissions  x-goog-user-project=polished-watch-438215-q5
+[debug] [2026-06-24T13:32:11.365Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/polished-watch-438215-q5:testIamPermissions {"permissions":["firebase.projects.get","firebase.projects.update","firebaseauth.configs.update"]}
+[debug] [2026-06-24T13:32:12.771Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/polished-watch-438215-q5:testIamPermissions 200
+[debug] [2026-06-24T13:32:12.771Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/polished-watch-438215-q5:testIamPermissions {"permissions":["firebase.projects.get","firebase.projects.update","firebaseauth.configs.update"]}
+[info] 
+[info] === Deploying to 'polished-watch-438215-q5'...
+[info] 
+[info] i  deploying auth 
+[debug] [2026-06-24T13:32:12.774Z] Checked if tokens are valid: true, expires at: 1782310455431
+[debug] [2026-06-24T13:32:12.774Z] Checked if tokens are valid: true, expires at: 1782310455431
+[debug] [2026-06-24T13:32:12.775Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/polished-watch-438215-q5/webApps pageSize=100
+[debug] [2026-06-24T13:32:13.615Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/polished-watch-438215-q5/webApps 200
+[debug] [2026-06-24T13:32:13.615Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/polished-watch-438215-q5/webApps {"apps":[{"name":"projects/polished-watch-438215-q5/webApps/1:925574670802:web:7c7548156a9ae0e739400b","appId":"1:925574670802:web:7c7548156a9ae0e739400b","displayName":"FinanceHQ","projectId":"polished-watch-438215-q5","webId":"Y2Q0ODkyYjctN2Q3Zi00YTAyLThjZDAtNTFmMTlhNmJmZDZl","apiKeyId":"8004cd30-120f-494e-b9ca-1d0cb1aaed7e","state":"ACTIVE","expireTime":"1970-01-01T00:00:00Z","etag":"1_9c6cbbf4-d2b5-4042-b714-93ca5269e051"}]}
+[info] Enabling auth providers: email/password, Google sign-in...
+[debug] [2026-06-24T13:32:13.617Z] [provision] Starting Firebase app provisioning...
+[debug] [2026-06-24T13:32:13.617Z] [provision] Request: {
+  "appNamespace": "1:925574670802:web:7c7548156a9ae0e739400b",
+  "parent": "projects/polished-watch-438215-q5",
+  "firebaseAuthInput": {
+    "emailAuthProviderMode": "PROVIDER_ENABLED",
+    "googleSigninProviderMode": "PROVIDER_ENABLED",
+    "googleSigninProviderConfig": {
+      "publicDisplayName": "Freelance Tracker",
+      "customerSupportEmail": "support@example.com",
+      "oauthRedirectUris": [
+        "http://localhost:3000"
+      ]
+    }
+  },
+  "webInput": {}
+}
+[debug] [2026-06-24T13:32:13.617Z] Checked if tokens are valid: true, expires at: 1782310455431
+[debug] [2026-06-24T13:32:13.617Z] Checked if tokens are valid: true, expires at: 1782310455431
+[debug] [2026-06-24T13:32:13.618Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1alpha/firebase:provisionFirebaseApp [none]
+[debug] [2026-06-24T13:32:13.618Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1alpha/firebase:provisionFirebaseApp {"appNamespace":"1:925574670802:web:7c7548156a9ae0e739400b","parent":"projects/polished-watch-438215-q5","firebaseAuthInput":{"emailAuthProviderMode":"PROVIDER_ENABLED","googleSigninProviderMode":"PROVIDER_ENABLED","googleSigninProviderConfig":{"publicDisplayName":"Freelance Tracker","customerSupportEmail":"support@example.com","oauthRedirectUris":["http://localhost:3000"]}},"webInput":{}}
+[debug] [2026-06-24T13:32:15.513Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1alpha/firebase:provisionFirebaseApp 200
+[debug] [2026-06-24T13:32:15.513Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1alpha/firebase:provisionFirebaseApp {"name":"operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli"}
+[debug] [2026-06-24T13:32:15.514Z] [provision] Operation started: operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli
+[debug] [2026-06-24T13:32:15.514Z] [provision] Polling for operation completion...
+[debug] [2026-06-24T13:32:15.515Z] Checked if tokens are valid: true, expires at: 1782310455431
+[debug] [2026-06-24T13:32:15.516Z] Checked if tokens are valid: true, expires at: 1782310455431
+[debug] [2026-06-24T13:32:15.516Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli [none]
+[debug] [2026-06-24T13:32:15.996Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli 200
+[debug] [2026-06-24T13:32:15.996Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli {"name":"operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli"}
+[debug] [2026-06-24T13:32:16.199Z] [Provision Firebase App Poller] Retrying task index 0
+[debug] [2026-06-24T13:32:16.200Z] Checked if tokens are valid: true, expires at: 1782310455431
+[debug] [2026-06-24T13:32:16.200Z] Checked if tokens are valid: true, expires at: 1782310455431
+[debug] [2026-06-24T13:32:16.200Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli [none]
+[debug] [2026-06-24T13:32:16.832Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli 200
+[debug] [2026-06-24T13:32:16.833Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli {"name":"operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli"}
+[debug] [2026-06-24T13:32:17.235Z] [Provision Firebase App Poller] Retrying task index 0
+[debug] [2026-06-24T13:32:17.236Z] Checked if tokens are valid: true, expires at: 1782310455431
+[debug] [2026-06-24T13:32:17.236Z] Checked if tokens are valid: true, expires at: 1782310455431
+[debug] [2026-06-24T13:32:17.236Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli [none]
+[debug] [2026-06-24T13:32:17.850Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli 200
+[debug] [2026-06-24T13:32:17.850Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli {"name":"operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli"}
+[debug] [2026-06-24T13:32:18.651Z] [Provision Firebase App Poller] Retrying task index 0
+[debug] [2026-06-24T13:32:18.652Z] Checked if tokens are valid: true, expires at: 1782310455431
+[debug] [2026-06-24T13:32:18.652Z] Checked if tokens are valid: true, expires at: 1782310455431
+[debug] [2026-06-24T13:32:18.652Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli [none]
+[debug] [2026-06-24T13:32:19.363Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli 200
+[debug] [2026-06-24T13:32:19.363Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli {"name":"operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli"}
+[debug] [2026-06-24T13:32:20.964Z] [Provision Firebase App Poller] Retrying task index 0
+[debug] [2026-06-24T13:32:20.965Z] Checked if tokens are valid: true, expires at: 1782310455431
+[debug] [2026-06-24T13:32:20.965Z] Checked if tokens are valid: true, expires at: 1782310455431
+[debug] [2026-06-24T13:32:20.965Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli [none]
+[debug] [2026-06-24T13:32:21.837Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli 200
+[debug] [2026-06-24T13:32:21.837Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli {"name":"operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli"}
+[debug] [2026-06-24T13:32:25.039Z] [Provision Firebase App Poller] Retrying task index 0
+[debug] [2026-06-24T13:32:25.040Z] Checked if tokens are valid: true, expires at: 1782310455431
+[debug] [2026-06-24T13:32:25.040Z] Checked if tokens are valid: true, expires at: 1782310455431
+[debug] [2026-06-24T13:32:25.040Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli [none]
+[debug] [2026-06-24T13:32:25.657Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli 200
+[debug] [2026-06-24T13:32:25.658Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli {"name":"operations/workflows/ZThjZTAwNmItMjM0YS00NjczLWJmYjYtOTlkZjFmMTQyOTli","done":true,"error":{"code":3,"message":"PROVISION_WEB_OAUTH_CLIENT_TASK: com.google.identity.boq.idaas.exception.GitkitClientException: code: INVALID_VALUE\nhttp status: 400\narguments: [INVALID_AUTHORIZED_DOMAIN : localhost:3000 should only contain the valid domain.]\n","details":[{"@type":"type.googleapis.com/util.StatusProto","code":3,"space":"generic","message":"PROVISION_WEB_OAUTH_CLIENT_TASK: com.google.identity.boq.idaas.exception.GitkitClientException: code: INVALID_VALUE\nhttp status: 400\narguments: [INVALID_AUTHORIZED_DOMAIN : localhost:3000 should only contain the valid domain.]\n"}]}}
+[debug] [2026-06-24T13:32:25.928Z] FirebaseError: PROVISION_WEB_OAUTH_CLIENT_TASK: com.google.identity.boq.idaas.exception.GitkitClientException: code: INVALID_VALUE
+http status: 400
+arguments: [INVALID_AUTHORIZED_DOMAIN : localhost:3000 should only contain the valid domain.]
+
+    at OperationPoller.poll (/Users/apple/.npm/_npx/ba4f1959e38407b5/node_modules/firebase-tools/lib/operation-poller.js:25:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async provisionFirebaseApp (/Users/apple/.npm/_npx/ba4f1959e38407b5/node_modules/firebase-tools/lib/management/provisioning/provision.js:101:24)
+    at async deploy (/Users/apple/.npm/_npx/ba4f1959e38407b5/node_modules/firebase-tools/lib/deploy/auth/deploy.js:47:5)
+    at async chain (/Users/apple/.npm/_npx/ba4f1959e38407b5/node_modules/firebase-tools/lib/deploy/index.js:45:9)
+    at async deploy (/Users/apple/.npm/_npx/ba4f1959e38407b5/node_modules/firebase-tools/lib/deploy/index.js:126:9)
+[error] 
+[error] Error: Failed to provision Firebase app: PROVISION_WEB_OAUTH_CLIENT_TASK: com.google.identity.boq.idaas.exception.GitkitClientException: code: INVALID_VALUE
+http status: 400
+arguments: [INVALID_AUTHORIZED_DOMAIN : localhost:3000 should only contain the valid domain.]
+
